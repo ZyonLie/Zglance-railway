@@ -7,7 +7,7 @@
         
         - type: custom-api
           title: Next Race
-          cache: 2h
+          cache: 1d
           url: https://f1api.dev/api/current/next
           template: |
             <div class="flex flex-column gap-5">
@@ -94,6 +94,7 @@
               label: JST
 
         - type: markets
+          cache: 5m
           markets:
             - symbol: IDR=X
               name: IDR/USD
@@ -127,6 +128,7 @@
     - size: small
       widgets:
         - type: markets
+          cache: 5m
           markets:
             - symbol: IDR=X
               name: IDR/USD
@@ -150,7 +152,7 @@
         
         - type: custom-api
           title: Next Race
-          cache: 2h
+          cache: 1d
           url: https://f1api.dev/api/current/next
           template: |
             <div class="flex flex-column gap-5">
@@ -248,6 +250,7 @@
               type: reddit
               show-thumbnails: true
               collapse-after: 15
+          cache: 1h
           widgets:
           - subreddit: gamingnews
             <<: *shared-properties
