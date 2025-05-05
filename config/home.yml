@@ -20,12 +20,6 @@
                 <p class="color-highlight">{{ $session.String "raceName" }}</p>
                 <p class="color-primary">
                   <span>Race</span>
-                  {{ $datetime := concat ($session.String "schedule.race.date") "T" ($session.String "schedule.race.time") }}
-                  <span
-                    class="color-highlight"
-                    title="{{ $session.String "schedule.race.date" }}"
-                    {{ parseRelativeTime "rfc3339" $datetime }}
-                  ></span>
                 </p>
                 <p class="size-h5">{{ $session.String "schedule.race.date" }}</p>
                 </div>
@@ -169,12 +163,6 @@
                 <p class="color-highlight">{{ $session.String "raceName" }}</p>
                 <p class="color-primary">
                   <span>Race</span>
-                  {{ $datetime := concat ($session.String "schedule.race.date") "T" ($session.String "schedule.race.time") }}
-                  <span
-                    class="color-highlight"
-                    title="{{ $session.String "schedule.race.date" }}"
-                    {{ parseRelativeTime "rfc3339" $datetime }}
-                  ></span>
                 </p>
                 <p class="size-h5">{{ $session.String "schedule.race.date" }}</p>
                 </div>
