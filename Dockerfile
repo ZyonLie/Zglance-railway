@@ -10,7 +10,7 @@ WORKDIR /app
 COPY --from=builder /app .
 
 HEALTHCHECK --timeout=10s --start-period=60s --interval=60s \
-  CMD wget --spider -q http://localhost:8080/api/healthz
+  CMD wget --spider -q http://localhost:8080/api/
 
 EXPOSE 8080/tcp
 ENTRYPOINT ["/app/glance", "--config", "/app/config/glance.yml"]
