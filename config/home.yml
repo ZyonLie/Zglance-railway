@@ -257,7 +257,7 @@
           define: &shared-properties
               type: reddit
               show-thumbnails: true
-              collapse-after: 15
+              collapse-after: 6
           cache: 1h
           widgets:
           - subreddit: gamingnews
@@ -267,14 +267,16 @@
           - subreddit: pcgaming
             <<: *shared-properties
         
-        - type: rss
-          title: News
-          style: detailed-list
-          cache: 30m
-          feeds:
-            - url: https://videocardz.com/rss.feed
-              title: Videocardz
-            - url: https://feeds.arstechnica.com/arstechnica/index
-              title: Ars Technica
-            - url: https://www.pcmag.com/feeds/rss/news
-              title: PCMag
+        - type: group
+          define: &shared-properties
+              type: rss
+              title: News
+              style: detailed-list
+              cache: 30m
+              feeds:
+                - url: https://videocardz.com/rss.feed
+                  title: Videocardz
+                - url: https://feeds.arstechnica.com/arstechnica/index
+                  title: Ars Technica
+                - url: https://www.pcmag.com/feeds/rss/news
+                  title: PCMag
