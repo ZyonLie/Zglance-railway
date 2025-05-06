@@ -273,8 +273,8 @@
           cache: 30m
           feeds:
             - url: https://videocardz.com/rss.feed
-              name: Videocardz
+              title: Videocardz
             - url: https://arstechnica.com/rss-feeds/
-              name: Ars Technica
+              title: Ars Technica
             - url: https://www.pcmag.com/feeds/rss/news
-              name: PCMag
+              title: PCMag
