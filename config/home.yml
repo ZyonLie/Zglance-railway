@@ -188,6 +188,14 @@
                 {{ end }}
               </ul>
             </div>
+        
+        - type: rss
+          title: F1 News
+          style: detailed-list
+          cache: 30m
+          feeds:
+            - url: https://www.autosport.com/rss/f1/news/
+            
   - size: full
     widgets:
         - type: custom-api
@@ -195,7 +203,7 @@
           cache: 1d
           url: https://f1api.dev/api/current/drivers-championship
           template: |
-            <ul class="list collapsible-container" data-collapse-after="5">
+            <ul class="list collapsible-container" data-collapse-after="10">
               {{ range $i, $v := .JSON.Array "drivers_championship" }}
               <li class="flex items-center {{ if eq $i 0 }}color-primary{{ else if eq $i 1 }}color-highlight{{ end }}">
                 <div class="grow min-width-0">
@@ -212,7 +220,7 @@
           cache: 1d
           url: https://f1api.dev/api/current/constructors-championship
           template: |
-            <ul class="list collapsible-container" data-collapse-after="5">
+            <ul class="list collapsible-container" data-collapse-after="10">
               {{ range $i, $v := .JSON.Array "constructors_championship" }}
               <li class="flex items-center {{ if eq $i 0 }}color-primary{{ else if eq $i 1 }}color-highlight{{ end }}">
                 <span class="grow min-width-0">{{ .String "position" }}. {{ .String "team.teamName" }}</span>
