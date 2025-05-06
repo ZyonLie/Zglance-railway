@@ -5,7 +5,3 @@
   font-display: swap;
   src: url(./DMSans-VariableFont_opsz,wght.ttf) format('ttf');
 }
-
-:root {
-  font-size: 30px;
-}
