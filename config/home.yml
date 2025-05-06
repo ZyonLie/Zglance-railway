@@ -272,9 +272,11 @@
           style: detailed-list
           cache: 30m
           feeds:
-            - url: https://videocardz.com/rss-feed.xml
+            - url: https://videocardz.com/rss-feed
+              item-link-prefix: videocardz.com/
               title: Videocardz
             - url: https://feeds.arstechnica.com/arstechnica/index
               title: Ars Technica
-            - url: https://www.pcmag.com/feeds/rss/news.xml
+            - url: https://www.pcmag.com/feeds/rss/news
+              item-link-prefix: www.pcmag.com/
               title: PCMag
