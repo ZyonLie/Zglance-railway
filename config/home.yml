@@ -266,3 +266,15 @@
             <<: *shared-properties
           - subreddit: pcgaming
             <<: *shared-properties
+        
+        - type: rss
+          title: News
+          style: detailed-list
+          cache: 30m
+          feeds:
+            - url: https://videocardz.com/rss.feed
+              name: Videocardz
+            - url: https://arstechnica.com/rss-feeds/
+              name: Ars Technica
+            - url: https://feeds.pcmag.com/Rss.aspx/SectionArticles?sectionId=27961
+              name: PCMag
