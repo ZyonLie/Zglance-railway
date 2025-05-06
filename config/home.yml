@@ -157,9 +157,7 @@
               name: Bitcoin
             - symbol: GC=F
               name: Gold
-  
-      - size: small
-      widgets:
+
         - type: markets
           cache: 5m
           markets:
