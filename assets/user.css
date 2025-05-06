@@ -1,1 +1,11 @@
+@font-face {
+  font-family: 'DMSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./DMSans-VariableFont_opsz,wght.ttf) format('ttf');
+}
 
+:root {
+  font-size: 30px;
+}
