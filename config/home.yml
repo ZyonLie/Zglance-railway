@@ -153,16 +153,18 @@
               name: SGD/IDR
             - symbol: ^JKSE
               name: IHSG
-            - symbol: SPY
-              name: S&P 500
             - symbol: BTC-USD
               name: Bitcoin
+            - symbol: GC=F
+              name: Gold
   
       - size: small
       widgets:
         - type: markets
           cache: 5m
           markets:
+            - symbol: SPY
+              name: S&P 500
             - symbol: NVDA
               name: NVIDIA
             - symbol: AAPL
