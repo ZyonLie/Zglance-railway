@@ -267,18 +267,16 @@
           - subreddit: pcgaming
             <<: *shared-properties
 
-     - size: full
-       widgets:
-        - type: rss
-          title: News
-          style: detailed-list
-          cache: 30m
-          feeds:
-            - url: https://videocardz.com/rss-feed
-              item-link-prefix: videocardz.com/
-              title: Videocardz
-            - url: https://feeds.arstechnica.com/arstechnica/index
-              title: Ars Technica
-            - url: https://www.pcmag.com/feeds/rss/news
-              item-link-prefix: www.pcmag.com/
-              title: PCMag
+    - size: full
+      widgets:
+      - type: rss
+        title: News
+        style: detailed-list
+        cache: 30m
+        feeds:
+        - url: https://rss.app/rss-feed?keyword=videocardz&region=US&lang=en
+          title: Videocardz
+        - url: https://feeds.arstechnica.com/arstechnica/index
+          title: Ars Technica
+        - url: https://rss.app/rss-feed?keyword=pcmag&region=US&lang=en
+          title: PCMag
