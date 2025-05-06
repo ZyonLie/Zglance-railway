@@ -2,8 +2,8 @@ server:
   assets-path: /app/assets
 branding:
   hide-footer: true
-  logo-url: https://drive.google.com/file/d/1j-ZQ4HwzJC_mKc3GK4szNBb_B1dJzHZa/preview
-  favicon-url: https://drive.google.com/file/d/1j-ZQ4HwzJC_mKc3GK4szNBb_B1dJzHZa/preview
+  logo-url: https://drive.google.com/file/d/1j-ZQ4HwzJC_mKc3GK4szNBb_B1dJzHZa/view
+  favicon-url: https://drive.google.com/file/d/1j-ZQ4HwzJC_mKc3GK4szNBb_B1dJzHZa/view
 
 theme:
   light: false
