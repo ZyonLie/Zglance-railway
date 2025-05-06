@@ -2,8 +2,8 @@ server:
   assets-path: /app/assets
 branding:
   hide-footer: true
-  logo-url: <iframe src="https://drive.google.com/file/d/1j-ZQ4HwzJC_mKc3GK4szNBb_B1dJzHZa/preview" width="640" height="480" allow="autoplay"></iframe>
-  favicon-url: <iframe src="https://drive.google.com/file/d/1j-ZQ4HwzJC_mKc3GK4szNBb_B1dJzHZa/preview" width="640" height="480" allow="autoplay"></iframe>
+  logo-url: https://cdn.discordapp.com/attachments/700991964564291624/1369235765137117226/app-icon.png?ex=681b1fad&is=6819ce2d&hm=0ccb83161594c3eb93f70344e091965f672e12dbf45755a7b9e097312b33b443&
+  favicon-url: https://cdn.discordapp.com/attachments/700991964564291624/1369235765137117226/app-icon.png?ex=681b1fad&is=6819ce2d&hm=0ccb83161594c3eb93f70344e091965f672e12dbf45755a7b9e097312b33b443&
 
 theme:
   light: false
