@@ -203,22 +203,6 @@
     - size: full
       widgets:
         - type: group
-          define: &shared-properties
-              type: reddit
-              show-thumbnails: true
-              collapse-after: 10
-          cache: 1h
-          widgets:
-          - subreddit: gamingnews
-            <<: *shared-properties
-          - subreddit: games
-            <<: *shared-properties
-          - subreddit: pcgaming
-            <<: *shared-properties
-
-    - size: full
-      widgets:
-        - type: group
           define: &shared-property
               type: rss
               collapse-after: 8
@@ -238,6 +222,22 @@
                 - url: https://www.techpowerup.com/rss/news
               <<: *shared-property
               
+    - size: full
+      widgets:
+        - type: group
+          define: &shared-properties
+              type: reddit
+              show-thumbnails: true
+              collapse-after: 10
+          cache: 1h
+          widgets:
+          - subreddit: gamingnews
+            <<: *shared-properties
+          - subreddit: games
+            <<: *shared-properties
+          - subreddit: pcgaming
+            <<: *shared-properties
+
 - name: F1
   columns:
   - size: full
