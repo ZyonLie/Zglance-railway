@@ -86,7 +86,6 @@
             - title: Gaming
               feeds:
                 - url: https://rss.app/feeds/tY3DgrPoAMkBGXGf.xml
-                - url: https://feeds.arstechnica.com/arstechnica/index
                 - url: https://rss.app/feeds/tDS7BUXSTJ92CCiL.xml
                 - url: https://www.techpowerup.com/rss/news
               <<: *shared-property
@@ -229,10 +228,6 @@
             - title: Videocardz
               feeds:
                 - url: https://rss.app/feeds/tY3DgrPoAMkBGXGf.xml
-              <<: *shared-property
-            - title: Ars Technica
-              feeds:
-                - url: https://feeds.arstechnica.com/arstechnica/index
               <<: *shared-property
             - title: PCMag
               feeds:
