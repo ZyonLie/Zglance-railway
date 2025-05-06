@@ -146,19 +146,35 @@
           cache: 5m
           markets:
             - symbol: IDR=X
-              name: IDR/USD
+              name: USD/IDR
+            - symbol: JPYIDR=X
+              name: JPY/IDR
+            - symbol: SGDIDR=X
+              name: SGD/IDR
             - symbol: ^JKSE
               name: IHSG
             - symbol: SPY
               name: S&P 500
             - symbol: BTC-USD
               name: Bitcoin
+  
+      - size: small
+      widgets:
+        - type: markets
+          cache: 5m
+          markets:
             - symbol: NVDA
               name: NVIDIA
             - symbol: AAPL
               name: Apple
             - symbol: TSM
               name: TSMC
+            - symbol: GOOG
+              name: Google
+            - symbol: META
+              name: Meta
+            - symbol: TSLA
+              name: Tesla Motors
               
 - name: Gaming
   columns:
