@@ -81,7 +81,7 @@
             - title: Market
               feeds:
                 - url: https://feeds.bloomberg.com/markets/news.rss
-              <: *shared-property
+              <<: *shared-property
             - title: Gaming
               feeds:
                 - url: https://rss.app/feeds/tY3DgrPoAMkBGXGf.xml
