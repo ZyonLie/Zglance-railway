@@ -3,13 +3,12 @@ server:
 
 theme:
   light: false
-  background-color: 226 32 8
+  background-color: 200 18 3
   primary-color: 32 88 49
   positive-color: 174 84 44
   negative-color: 341 85 45
-  contrast-multiplier: 1.2
-  text-saturation-multiplier: 1.4
-  custom-css-file: /assets/user.css
+  contrast-multiplier: 1
+  text-saturation-multiplier: 1.8
 
 pages:
   # It's not necessary to create a new file for each page and include it, you can simply
