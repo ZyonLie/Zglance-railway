@@ -257,7 +257,7 @@
           define: &shared-properties
               type: reddit
               show-thumbnails: true
-              collapse-after: 6
+              collapse-after: 10
           cache: 1h
           widgets:
           - subreddit: gamingnews
@@ -266,7 +266,9 @@
             <<: *shared-properties
           - subreddit: pcgaming
             <<: *shared-properties
-      
+
+     - size: full
+       widgets:
         - type: rss
           title: News
           style: detailed-list
