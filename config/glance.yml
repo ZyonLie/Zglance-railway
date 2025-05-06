@@ -6,8 +6,8 @@ theme:
   primary-color: 24 97 58
   negative-color: 209 88 54
   contrast: 1.3
-  
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+ font: <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 
 pages:
