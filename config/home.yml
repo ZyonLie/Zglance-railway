@@ -66,7 +66,7 @@
     - size: full
       widgets:
         - type: weather
-          location: Alor, Indonesia
+          location: Jakarta, Indonesia
           units: metric # alternatively "imperial"
           hour-format: 24h # alternatively "24h"
           # Optionally hide the location from being displayed in the widget
