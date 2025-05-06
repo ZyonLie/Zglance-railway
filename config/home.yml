@@ -273,25 +273,26 @@
           cache: 30m
           widgets:
             - type: rss
-              title: News
+              title: Videocardz
               style: detailed-list
+              collapse-after: 7
               feeds:
                 - url: https://rss.app/feeds/tY3DgrPoAMkBGXGf.xml
                   title: Videocardz
             - type: rss
-              title: News
+              title: Ars Technica
               style: detailed-list
               feeds:
                 - url: https://feeds.arstechnica.com/arstechnica/index
                   title: Ars Technica
             - type: rss
-              title: News
+              title: PCMag
               style: detailed-list
               feeds:
                 - url: https://rss.app/feeds/tDS7BUXSTJ92CCiL.xml
                   title: PCMag
             - type: rss
-              title: News
+              title: TechPowerUp
               style: detailed-list
               feeds:
                 - url: https://www.techpowerup.com/rss/news
