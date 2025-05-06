@@ -196,7 +196,7 @@
           feeds:
             - url: https://www.autosport.com/rss/f1/news/
             
-  - size: full
+  - size: small
     widgets:
         - type: custom-api
           title: Drivers Standings
