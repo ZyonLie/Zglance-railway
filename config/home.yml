@@ -269,14 +269,30 @@
 
     - size: full
       widgets:
-      - type: rss
-        title: News
-        style: detailed-list
-        cache: 30m
-        feeds:
-        - url: https://rss.app/rss-feed?keyword=videocardz&region=US&lang=en
-          title: Videocardz
-        - url: https://feeds.arstechnica.com/arstechnica/index
-          title: Ars Technica
-        - url: https://rss.app/rss-feed?keyword=pcmag&region=US&lang=en
-          title: PCMag
+        - type: group
+          cache: 30m
+          widgets:
+            - type: rss
+              title: News
+              style: detailed-list
+              feeds:
+                - url: https://rss.app/feeds/tY3DgrPoAMkBGXGf.xml
+                  title: Videocardz
+            - type: rss
+              title: News
+              style: detailed-list
+              feeds:
+                - url: https://feeds.arstechnica.com/arstechnica/index
+                  title: Ars Technica
+            - type: rss
+              title: News
+              style: detailed-list
+              feeds:
+                - url: https://rss.app/feeds/tDS7BUXSTJ92CCiL.xml
+                  title: PCMag
+            - type: rss
+              title: News
+              style: detailed-list
+              feeds:
+                - url: https://www.techpowerup.com/rss/news
+                  title: TechPowerUp
