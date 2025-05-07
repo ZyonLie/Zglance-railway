@@ -2,8 +2,8 @@ server:
   assets-path: /app/assets
 branding:
   hide-footer: true
-  logo-url: https://cdn.discordapp.com/attachments/700991964564291624/1369237349883707502/AISelect_20250506_162943_Instagram2.png?ex=681b2127&is=6819cfa7&hm=ba0fbdc59ba0cd4e72230c97483a001380535f9956aec9133a4b64cfb2480d06&
-  favicon-url: https://cdn.discordapp.com/attachments/700991964564291624/1369235765137117226/app-icon.png?ex=681b1fad&is=6819ce2d&hm=0ccb83161594c3eb93f70344e091965f672e12dbf45755a7b9e097312b33b443&
+  logo-url: https://ibb.co.com/xKVK3hpS
+  favicon-url: https://ibb.co.com/xKVK3hpS
 
 theme:
   light: false
