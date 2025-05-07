@@ -2,8 +2,8 @@ server:
   assets-path: /app/assets
 branding:
   hide-footer: true
-  logo-url: https://ibb.co.com/xKVK3hpS
-  favicon-url: https://ibb.co.com/xKVK3hpS
+  logo-url: <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/DP3PL4xD/app-icon.png" alt="app-icon" border="0"></a>
+  favicon-url: <a href="https://imgbb.com/"><img src="https://i.ibb.co.com/DP3PL4xD/app-icon.png" alt="app-icon" border="0"></a>
 
 theme:
   light: false
