@@ -140,6 +140,9 @@
             - url: https://feeds.bloomberg.com/markets/news.rss
               title: Bloomberg
               limit: 20
+            - url: https://www.ft.com/news-feed?format=rss
+              title: Financial Times
+              limti:  20
   
     - size: small
       widgets:
