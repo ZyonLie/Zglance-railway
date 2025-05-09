@@ -82,7 +82,9 @@
             - title: Market
               feeds:
                 - url: https://feeds.bloomberg.com/markets/news.rss
-                - url: https://www.ft.com/news-feed?format=rss
+                - url: https://www.ft.com/companies?format=rss
+                  title: Financial Times
+                - url: https://www.ft.com/markets?format=rss
                   title: Financial Times
               <<: *shared-property
             - title: Gaming
@@ -141,9 +143,12 @@
             - url: https://feeds.bloomberg.com/markets/news.rss
               title: Bloomberg
               limit: 20
-            - url: https://www.ft.com/news-feed?format=rss
+            - url: https://www.ft.com/companies?format=rss
               title: Financial Times
               limti:  20
+            - url: https://www.ft.com/markets?format=rss
+              title: Financial Times
+              limit: 20
   
     - size: small
       widgets:
