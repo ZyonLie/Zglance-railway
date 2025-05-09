@@ -83,6 +83,7 @@
               feeds:
                 - url: https://feeds.bloomberg.com/markets/news.rss
                 - url: https://www.ft.com/news-feed?format=rss
+                  title: Financial Times
               <<: *shared-property
             - title: Gaming
               feeds:
