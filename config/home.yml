@@ -82,6 +82,7 @@
             - title: Market
               feeds:
                 - url: https://feeds.bloomberg.com/markets/news.rss
+                - url: https://www.ft.com/news-feed?format=rss
               <<: *shared-property
             - title: Gaming
               feeds:
