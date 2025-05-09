@@ -70,7 +70,7 @@
           units: metric # alternatively "imperial"
           hour-format: 24h # alternatively "24h"
           # Optionally hide the location from being displayed in the widget
-          hide-location: true
+          # hide-location: true
 
         - type: group
           define: &shared-property
@@ -84,8 +84,10 @@
                 - url: https://feeds.bloomberg.com/markets/news.rss
                 - url: https://www.ft.com/companies?format=rss
                   title: Financial Times
+                  show-thumbnail: true
                 - url: https://www.ft.com/markets?format=rss
                   title: Financial Times
+                  show-thumbnail: true
               <<: *shared-property
             - title: Gaming
               feeds:
@@ -145,9 +147,11 @@
               limit: 20
             - url: https://www.ft.com/companies?format=rss
               title: Financial Times
+              show-thumbnail: true
               limti:  20
             - url: https://www.ft.com/markets?format=rss
               title: Financial Times
+              show-thumbnail: true
               limit: 20
   
     - size: small
