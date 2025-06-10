@@ -23,8 +23,7 @@
           
   columns:
     - size: small
-      widgets:     
-        
+      widgets:
         - type: custom-api
           title: Next Race
           cache: 1d
