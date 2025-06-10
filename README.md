@@ -1,15 +1,9 @@
 <p align="center"><em>What if you could see everything at a...</em></p>
 <h1 align="center">Glance</h1>
-<p align="center"><a href="#installation">Install</a> • <a href="docs/configuration.md">Configuration</a> • <a href="docs/preconfigured-pages.md">Preconfigured pages</a> • <a href="docs/themes.md">Themes</a> • <a href="https://discord.com/invite/7KQ7Xa9kJd">Discord</a></p>
+<p align="center"><a href="#installation">Install</a> • <a href="docs/configuration.md#configuring-glance">Configuration</a> • <a href="https://discord.com/invite/7KQ7Xa9kJd">Discord</a> • <a href="https://github.com/sponsors/glanceapp">Sponsor</a></p>
+<p align="center"><a href="https://github.com/glanceapp/community-widgets">Community widgets</a> • <a href="docs/preconfigured-pages.md">Preconfigured pages</a> • <a href="docs/themes.md">Themes</a></p>
 
-## Railway
-[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/new/template/MYrXAY)
-
-This is a fork of the entire glanceapp/glance codebase. The `Dockerfile` has been tweaked to copy over and build your dashboard based on the files in `config/`. You should be able to get a dashboard up and running on Railway immediately, then eject to a GitHub repo of your own and edit your configuration files from there.
-
-I created this as alternative to the existing Docker Glance template because it didn't work for me. Even if it had, only allowed for me to link to one configuration file. Multiple files are nicer if you want to host multiple pages.
-
-![](docs/images/glance-railway-dashboard-example.png)
+![](docs/images/readme-main-image.png)
 
 ## Features
 ### Various widgets
@@ -23,7 +17,7 @@ I created this as alternative to the existing Docker Glance template because it 
 * Docker containers status
 * Server stats
 * Custom widgets
-* [and many more...](docs/configuration.md)
+* [and many more...](docs/configuration.md#configuring-glance)
 
 ### Fast and lightweight
 * Low memory usage
@@ -52,8 +46,7 @@ Easily create your own theme by tweaking a few numbers or choose from one of the
 <br>
 
 ## Configuration
-Configuration is done through YAML files, to learn more about how the layout works, how to add more pages and how to configure widgets, visit the [configuration documentation](docs/configuration.md).
-
+Configuration is done through YAML files, to learn more about how the layout works, how to add more pages and how to configure widgets, visit the [configuration documentation](docs/configuration.md#configuring-glance).
 <details>
 <summary><strong>Preview example configuration file</strong></summary>
 <br>
@@ -201,6 +194,7 @@ services:
   glance:
     container_name: glance
     image: glanceapp/glance
+    restart: unless-stopped
     volumes:
       - ./config:/app/config
     ports:
