@@ -107,7 +107,7 @@
               <<: *shared-property
             - title: Gaming
               feeds:
-                - url: https://feeder.co/discover/764c9ead17/videocardz-com
+                - url: https://videocardz.com/rss-feed?feeder_chrome_proxy=1
                 - url: https://www.pcmag.com/feeds/rss/news
                 - url: https://www.techpowerup.com/rss/news
               <<: *shared-property
