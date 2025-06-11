@@ -6,16 +6,17 @@
       - type: markets
         hide-header: true
         markets:
+          - symbol: ^JKSE
+            name: IHSG
           - symbol: IDR=X
             name: IDR/USD
           - symbol: JPYIDR=X
             name: JPY/IDR  
           - symbol: SGDIDR=X
             name: SGD/IDR
-          - symbol: ^JKSE
-            name: IHSG
           - symbol: GC=F
-            name: GOLD
+            name: GOLD^JKSE
+            name: IHSG
 
   columns:
     - size: small
