@@ -109,6 +109,7 @@
               feeds:
                 - url: https://uk.pcmag.com/news
                 - url: https://www.techpowerup.com/rss/news
+                - url: https://www.techpowerup.com/rss/reviews
               <<: *shared-property
             - title: F1
               feeds:
@@ -244,7 +245,7 @@
               <<: *shared-property
             - title: PCMag
               feeds:
-                - url: https://feeds.pcmag.com/Rss.aspx/
+                - url: https://www.pcmag.com/feeds/rss/news
               <<: *shared-property
             - title: TechPowerUp
               feeds:
