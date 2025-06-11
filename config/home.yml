@@ -110,6 +110,9 @@
                 - url: https://news.google.com/rss/search?q=site%3Avideocardz.com&hl=en-ID&gl=ID&ceid=ID%3Aen
                 - url: https://www.techpowerup.com/rss/news
                 - url: https://www.techpowerup.com/rss/reviews
+                - url: https://videocardz.com/rss-feed
+                  headers:
+                    User-Agent: Mozilla/5.0
               <<: *shared-property
             - title: F1
               feeds:
