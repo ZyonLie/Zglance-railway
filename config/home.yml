@@ -245,7 +245,7 @@
               <<: *shared-property
             - title: PCMag
               feeds:
-                - url: https://www.pcmag.com/feeds/rss/news
+                - url: https://feeds.pcmag.com/Rss.aspx/
               <<: *shared-property
             - title: TechPowerUp
               feeds:
