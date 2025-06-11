@@ -6,17 +6,17 @@
       - type: markets
         hide-header: true
         markets:
-          - symbol: SPY
-            name: S&P 500
-          - symbol: BTC-USD
-            name: Bitcoin
+          - symbol: IDR=X
+            name: IDR/USD
+          - symbol: ^JKSE
+            name: IHSG
           - symbol: NVDA
             name: NVIDIA
-          - symbol: AAPL
-            name: Apple
-          - symbol: MSFT
-            name: Microsoft
-            
+          - symbol: TSM
+            name: TSMC
+          - symbol: BTC-USD
+            name: BITCOIN
+
   columns:
     - size: small
       widgets:
