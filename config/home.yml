@@ -108,7 +108,7 @@
             - title: Gaming
               feeds:
                 - url: https://uk.pcmag.com/news
-                - url: https://www.techpowerup.com/rss/latest
+                - url: https://www.techpowerup.com/rss/news
               <<: *shared-property
             - title: F1
               feeds:
