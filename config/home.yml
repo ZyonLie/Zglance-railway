@@ -8,14 +8,14 @@
         markets:
           - symbol: IDR=X
             name: IDR/USD
+          - symbol: JPYIDR=X
+            name: JPY/IDR  
+          - symbol: SGDIDR=X
+            name: SGD/IDR
           - symbol: ^JKSE
             name: IHSG
-          - symbol: NVDA
-            name: NVIDIA
-          - symbol: TSM
-            name: TSMC
-          - symbol: BTC-USD
-            name: BITCOIN
+          - symbol: GC=F
+            name: GOLD
 
   columns:
     - size: small
@@ -80,7 +80,9 @@
     - size: full
       widgets:
         - type: weather
+          hide-header: true
           location: Jakarta, Indonesia
+          hide-location: true
           units: metric # alternatively "imperial"
           hour-format: 24h # alternatively "24h"
           # Optionally hide the location from being displayed in the widget
@@ -117,6 +119,7 @@
     - size: small
       widgets:
         - type: clock
+          hide-header: true
           hour-format: 24h
           timezones:
             - timezone: Etc/UTC
@@ -129,12 +132,9 @@
               label: JST
 
         - type: markets
+          hide-header: true
           cache: 5m
           markets:
-            - symbol: IDR=X
-              name: IDR/USD
-            - symbol: ^JKSE
-              name: IHSG
             - symbol: SPY
               name: S&P 500
             - symbol: BTC-USD
@@ -171,6 +171,7 @@
     - size: small
       widgets:
         - type: markets
+          hide-header: true
           cache: 5m
           markets:
             - symbol: IDR=X
@@ -189,6 +190,7 @@
     - size: small
       widgets:
         - type: markets
+          hide-header: true
           cache: 5m
           markets:
             - symbol: SPY
