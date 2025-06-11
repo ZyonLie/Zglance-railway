@@ -241,7 +241,7 @@
           widgets:
             - title: Videocardz
               feeds:
-                - url: https://videocardz.com/rss-feed
+                - url: https://news.google.com/rss/search?q=site%3Avideocardz.com&hl=en-ID&gl=ID&ceid=ID%3Aen
               <<: *shared-property
             - title: PCMag
               feeds:
