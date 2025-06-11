@@ -108,7 +108,6 @@
             - title: Gaming
               feeds:
                 - url: https://news.google.com/rss/search?q=site%3Avideocardz.com&hl=en-ID&gl=ID&ceid=ID%3Aen
-                - url: https://news.google.com/rss/search?q=site%3Apcmag.com&hl=en-ID&gl=ID&ceid=ID%3Aen
                 - url: https://www.techpowerup.com/rss/news
                 - url: https://www.techpowerup.com/rss/reviews
               <<: *shared-property
@@ -243,10 +242,6 @@
             - title: Videocardz
               feeds:
                 - url: https://news.google.com/rss/search?q=site%3Avideocardz.com&hl=en-ID&gl=ID&ceid=ID%3Aen
-              <<: *shared-property
-            - title: PCMag
-              feeds:
-                - url: https://news.google.com/rss/search?q=site%3Apcmag.com&hl=en-ID&gl=ID&ceid=ID%3Aen
               <<: *shared-property
             - title: TechPowerUp
               feeds:
