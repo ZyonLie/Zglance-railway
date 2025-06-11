@@ -16,7 +16,6 @@
             name: SGD/IDR
           - symbol: GC=F
             name: GOLD^JKSE
-            name: IHSG
 
   columns:
     - size: small
@@ -108,7 +107,7 @@
               <<: *shared-property
             - title: Gaming
               feeds:
-                - url: https://videocardz.com/rss-feed
+                - url: https://feeder.co/discover/764c9ead17/videocardz-com
                 - url: https://www.pcmag.com/feeds/rss/news
                 - url: https://www.techpowerup.com/rss/news
               <<: *shared-property
