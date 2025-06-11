@@ -109,7 +109,7 @@
               feeds:
                 - url: https://videocardz.com/rss-feed?feeder_chrome_proxy=1
                 - url: https://www.pcmag.com/feeds/rss/news
-                - url: https://www.techpowerup.com/rss/news
+                - url: https://www.techpowerup.com/rss/latest
               <<: *shared-property
             - title: F1
               feeds:
@@ -241,7 +241,7 @@
           widgets:
             - title: Videocardz
               feeds:
-                - url: https://videocardz.com/rss-feed
+                - url: https://videocardz.com/rss-feed?feeder_chrome_proxy=1
               <<: *shared-property
             - title: PCMag
               feeds:
