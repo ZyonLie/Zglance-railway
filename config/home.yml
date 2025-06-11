@@ -241,7 +241,7 @@
           widgets:
             - title: Videocardz
               feeds:
-                - url: https://videocardz.com/rss-feed?feeder_chrome_proxy=1
+                - url: https://videocardz.com/rss-feed
               <<: *shared-property
             - title: PCMag
               feeds:
