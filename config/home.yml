@@ -2,19 +2,7 @@
 - name: Home
   # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
   # hide-desktop-navigation: true
-  head-widgets:
-    - type: clock
-          hour-format: 24h
-          timezones:
-            - timezone: Etc/UTC
-              label: UTC
-            - timezone: America/New_York
-              label: EST
-            - timezone: America/Los_Angeles
-              label: PST
-            - timezone: Asia/Tokyo
-              label: JST
-          
+
   columns:
     - size: small
       widgets:
