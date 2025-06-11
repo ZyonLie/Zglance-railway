@@ -107,8 +107,7 @@
               <<: *shared-property
             - title: Gaming
               feeds:
-                - url: https://videocardz.com/
-                - url: https://www.pcmag.com/feeds/rss/news
+                - url: https://uk.pcmag.com/news
                 - url: https://www.techpowerup.com/rss/latest
               <<: *shared-property
             - title: F1
