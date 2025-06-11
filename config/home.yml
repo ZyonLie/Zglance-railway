@@ -241,11 +241,11 @@
           widgets:
             - title: Videocardz
               feeds:
-                - url: curl -A "Mozilla/5.0" https://videocardz.com/rss-feed
+                - url: https://videocardz.com/rss-feed
               <<: *shared-property
             - title: PCMag
               feeds:
-                - url: https://www.pcmag.com/feeds/rss/news
+                - url: https://news.google.com/rss/search?q=site%3Apcmag.com&hl=en-ID&gl=ID&ceid=ID%3Aen
               <<: *shared-property
             - title: TechPowerUp
               feeds:
