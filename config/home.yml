@@ -266,10 +266,10 @@
 - name: F1
   head-widgets:
     - type: custom-api
-          title: Next Race
-          cache: 1d
-          url: https://f1api.dev/api/current/next
-          template: |
+      title: Next Race
+      cache: 1d
+      url: https://f1api.dev/api/current/next
+      template: |
             <div class="flex flex-column gap-5">
               {{ $session := index (.JSON.Array "race") 0 }}
               <p class="size-h5">
