@@ -147,6 +147,21 @@
               name: TSMC
 
 - name: Market
+  head-widgets:
+      - type: markets
+        hide-header: true
+        markets:
+          - symbol: ^JKSE
+            name: IHSG
+          - symbol: IDR=X
+            name: IDR/USD
+          - symbol: JPYIDR=X
+            name: JPY/IDR  
+          - symbol: SGDIDR=X
+            name: SGD/IDR
+          - symbol: GC=F
+            name: GOLD^JKSE
+            
   columns:
     - size: full
       widgets:
@@ -167,25 +182,6 @@
               title: Financial Times
               show-thumbnail: true
               limit: 20
-  
-    - size: small
-      widgets:
-        - type: markets
-          hide-header: true
-          cache: 5m
-          markets:
-            - symbol: IDR=X
-              name: USD/IDR
-            - symbol: JPYIDR=X
-              name: JPY/IDR
-            - symbol: SGDIDR=X
-              name: SGD/IDR
-            - symbol: ^JKSE
-              name: IHSG
-            - symbol: BTC-USD
-              name: Bitcoin
-            - symbol: GC=F
-              name: Gold
 
     - size: small
       widgets:
@@ -193,6 +189,8 @@
           hide-header: true
           cache: 5m
           markets:
+            - symbol: BTC-USD
+              name: Bitcoin
             - symbol: SPY
               name: S&P 500
             - symbol: NVDA
@@ -265,11 +263,8 @@
             <<: *shared-properties
 
 - name: F1
-  columns:
-  - size: full
-    widgets:     
-        
-        - type: custom-api
+  head-widgets:
+    - type: custom-api
           title: Next Race
           cache: 1d
           url: https://f1api.dev/api/current/next
@@ -291,6 +286,9 @@
               </ul>
             </div>
 
+  columns:
+  - size: full
+    widgets:     
         - type: rss
           title: F1 News
           style: detailed-list
