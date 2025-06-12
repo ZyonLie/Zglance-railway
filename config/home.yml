@@ -21,6 +21,7 @@
     - size: small
       widgets:
         - type: custom-api
+          hide-header: true
           title: Next Race
           cache: 1d
           url: https://f1api.dev/api/current/next
