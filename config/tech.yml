@@ -38,6 +38,10 @@
               feeds:
                 - url: https://www.techpowerup.com/rss/news
               <<: *shared-property
+            - title: WccfTech
+              feeds:
+                - url: https://wccftech.com/category/news/rss
+              <<: *shared-property 
               
     - size: full
       widgets:
