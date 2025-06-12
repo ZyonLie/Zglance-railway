@@ -5,7 +5,7 @@
       widgets:
         - type: custom-api
           title: Steam Specials
-          cache: 3h
+          cache: 30m
           url: https://store.steampowered.com/api/featuredcategories?cc=id
           template: |
             <ul class="list list-gap-20 collapsible-container" data-collapse-after="20">

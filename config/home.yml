@@ -5,6 +5,7 @@
   head-widgets:
       - type: markets
         hide-header: true
+        cache: 1m
         markets:
           - symbol: ^JKSE
             name: IHSG
@@ -134,7 +135,7 @@
 
         - type: markets
           hide-header: true
-          cache: 5m
+          cache: 1m
           markets:
             - symbol: SPY
               name: S&P 500
