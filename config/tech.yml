@@ -40,7 +40,8 @@
               <<: *shared-property
             - title: WccfTech
               feeds:
-                - url: https://wccftech.com/category/news/rss
+                - url: https://wccftech.com/topic/hardware/rss
+                - url: https://wccftech.com/topic/games/rss
               <<: *shared-property 
               
     - size: full
