@@ -13,6 +13,7 @@ theme:
   negative-color: 341 85 45
   contrast-multiplier: 1
   text-saturation-multiplier: 1.8
+  disable-picker: true
 
 pages:
   # It's not necessary to create a new file for each page and include it, you can simply
