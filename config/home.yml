@@ -109,9 +109,10 @@
               <<: *shared-property
             - title: Tech
               feeds:
-                - url: https://news.google.com/rss/search?q=site%3Avideocardz.com&hl=en-ID&gl=ID&ceid=ID%3Aen
                 - url: https://www.techpowerup.com/rss/news
                 - url: https://www.techpowerup.com/rss/reviews
+                - url: https://wccftech.com/topic/hardware/rss
+                - url: https://wccftech.com/topic/games/rss
               <<: *shared-property
             - title: F1
               feeds:
