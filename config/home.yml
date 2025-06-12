@@ -270,21 +270,22 @@
       cache: 1d
       url: https://f1api.dev/api/current/next
       template: |
-            <div class="flex flex-col items-center text-center gap-5 px-4 sm:px-6 md:px-8 lg:px-12 max-w-screen-md mx-auto">
+            <div class="flex flex-column gap-5">
               {{ $session := index (.JSON.Array "race") 0 }}
               <p class="size-h5">
                 Round {{ .JSON.String "round" }}
-             </p>
+              </p>
 
-             <div class="margin-block-4">
-               <p class="color-highlight">{{ $session.String "raceName" }}</p>
-               <p class="color-primary">
-                 <span>Race</span>
-               </p>
-               <p class="size-h5">{{ $session.String "schedule.race.date" }}</p>
-             </div>
+              <div class="margin-block-4">
+                <p class="color-highlight">{{ $session.String "raceName" }}</p>
+                <p class="color-primary">
+                  <span>Race</span>
+                </p>
+                <p class="size-h5">{{ $session.String "schedule.race.date" }}</p>
+                </div>
+
+              </ul>
             </div>
-
 
   columns:
   - size: full
