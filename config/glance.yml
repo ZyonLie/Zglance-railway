@@ -2,7 +2,8 @@ server:
   assets-path: /app/assets
 branding:
   hide-footer: true
-  
+ 
+
 theme:
   light: false
   background-color: 200 18 3
