@@ -37,7 +37,7 @@
               show-thumbnail: true
               limit: 20
               
-    - size: full
+    - size: small
       widgets:
         - type: markets
           hide-header: true
@@ -57,6 +57,13 @@
             name: Google
           - symbol: SOFI
             name: SOFI
+         
+    - size: small
+      widgets:
+        - type: markets
+          hide-header: true
+          cache: 1m
+          markets:
           - symbol: OPEN
             name: Opendoor
           - symbol: MRVL
