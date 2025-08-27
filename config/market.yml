@@ -19,12 +19,62 @@
   columns:
     - size: full
       widgets:
-        - type: rss
-          title: News
-          style: detailed-list
-          collapse-after: 10
-          cache: 5m
-          feeds:
+        - type: markets
+          hide-header: true
+          cache: 1m
+          sort-by: change
+          markets:
+          - symbol: BTC-USD
+            name: Bitcoin
+            chart-link: https://www.tradingview.com/chart/?symbol=btc-usd
+          - symbol: SPY
+            name: S&P 500
+            chart-link: https://www.tradingview.com/chart/?symbol=spy
+          - symbol: NVDA
+            name: NVIDIA
+            chart-link: https://www.tradingview.com/chart/?symbol=nvda
+          - symbol: AMD
+            name: AMD
+            chart-link: https://www.tradingview.com/chart/?symbol=amd
+          - symbol: TSM
+            name: TSMC
+            chart-link: https://www.tradingview.com/chart/?symbol=tsm
+          - symbol: GOOG
+            name: Google
+            chart-link: https://www.tradingview.com/chart/?symbol=goog
+          - symbol: SOFI
+            name: SOFI
+            chart-link: https://www.tradingview.com/chart/?symbol=sofi
+          - symbol: OPEN
+            name: Opendoor
+            chart-link: https://www.tradingview.com/chart/?symbol=open
+          - symbol: MRVL
+            name: Marvell
+            chart-link: https://www.tradingview.com/chart/?symbol=mrvl
+          - symbol: PLTR
+            name: Palantir
+            chart-link: https://www.tradingview.com/chart/?symbol=pltr
+          - symbol: AVGO
+            name: Broadcomm
+            chart-link: https://www.tradingview.com/chart/?symbol=avgo
+          - symbol: ORCL
+            name: Oracle
+            chart-link: https://www.tradingview.com/chart/?symbol=orcl
+          - symbol: BABA
+            name: Alibaba
+            chart-link: https://www.tradingview.com/chart/?symbol=baba
+          - symbol: INTC
+            name: Intel
+            chart-link: https://www.tradingview.com/chart/?symbol=intc
+
+    - size: full
+      widgets:
+       - type: rss
+         title: News
+         style: detailed-list
+         collapse-after: 10
+         cache: 5m
+         feeds:
             - url: https://feeds.bloomberg.com/markets/news.rss
               title: Bloomberg
               limit: 20
@@ -36,26 +86,4 @@
               title: Financial Times
               show-thumbnail: true
               limit: 20
-
-    - size: small
-      widgets:
-        - type: markets
-          hide-header: true
-          cache: 1m
-          markets:
-            - symbol: BTC-USD
-              name: Bitcoin
-            - symbol: SPY
-              name: S&P 500
-            - symbol: NVDA
-              name: NVIDIA
-            - symbol: AAPL
-              name: Apple
-            - symbol: TSM
-              name: TSMC
-            - symbol: GOOG
-              name: Google
-            - symbol: META
-              name: Meta
-            - symbol: TSLA
-              name: Tesla Motors
+              

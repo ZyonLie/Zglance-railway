@@ -144,7 +144,7 @@
               name: Bitcoin
             - symbol: NVDA
               name: NVIDIA
-            - symbol: AAPL
-              name: Apple
+            - symbol: AMD
+              name: AMD
             - symbol: TSM
               name: TSMC
