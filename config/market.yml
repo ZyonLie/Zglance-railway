@@ -63,3 +63,11 @@
               name: Marvell
             - symbol: PLTR
               name: Palantir
+            - symbol: AVGO
+              name: Broadcomm
+            - symbol: ORCL
+              name: Oracle
+            - symbol: BABA
+              name: Alibaba
+            - symbol: INTC
+              name: Intel
