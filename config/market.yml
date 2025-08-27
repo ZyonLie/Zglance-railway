@@ -2,44 +2,6 @@
 - name: Market
   head-widgets:
       - type: markets
-        hide-header: true
-        cache: 1m
-        markets:
-          - symbol: ^JKSE
-            name: IHSG
-          - symbol: IDR=X
-            name: IDR/USD
-          - symbol: JPYIDR=X
-            name: JPY/IDR  
-          - symbol: SGDIDR=X
-            name: SGD/IDR
-          - symbol: GC=F
-            name: GOLD^JKSE
-            
-  columns:
-    - size: full
-      widgets:
-        - type: rss
-          title: News
-          style: detailed-list
-          collapse-after: 10
-          cache: 5m
-          feeds:
-            - url: https://feeds.bloomberg.com/markets/news.rss
-              title: Bloomberg
-              limit: 20
-            - url: https://www.ft.com/companies?format=rss
-              title: Financial Times
-              show-thumbnail: true
-              limti:  20
-            - url: https://www.ft.com/markets?format=rss
-              title: Financial Times
-              show-thumbnail: true
-              limit: 20
-
-    - size: small
-      widgets:
-        - type: markets
           hide-header: true
           cache: 1m
           markets:
@@ -71,3 +33,41 @@
               name: Alibaba
             - symbol: INTC
               name: Intel
+            
+  columns:
+    - size: full
+      widgets:
+        - type: rss
+          title: News
+          style: detailed-list
+          collapse-after: 10
+          cache: 5m
+          feeds:
+            - url: https://feeds.bloomberg.com/markets/news.rss
+              title: Bloomberg
+              limit: 20
+            - url: https://www.ft.com/companies?format=rss
+              title: Financial Times
+              show-thumbnail: true
+              limti:  20
+            - url: https://www.ft.com/markets?format=rss
+              title: Financial Times
+              show-thumbnail: true
+              limit: 20
+
+    - size: small
+      widgets:
+       - type: markets
+        hide-header: true
+        cache: 1m
+        markets:
+          - symbol: ^JKSE
+            name: IHSG
+          - symbol: IDR=X
+            name: IDR/USD
+          - symbol: JPYIDR=X
+            name: JPY/IDR  
+          - symbol: SGDIDR=X
+            name: SGD/IDR
+          - symbol: GC=F
+            name: GOLD^JKSE
