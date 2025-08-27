@@ -49,13 +49,17 @@
               name: S&P 500
             - symbol: NVDA
               name: NVIDIA
-            - symbol: AAPL
-              name: Apple
+            - symbol: AMD
+              name: AMD
             - symbol: TSM
               name: TSMC
             - symbol: GOOG
               name: Google
-            - symbol: META
-              name: Meta
-            - symbol: TSLA
-              name: Tesla Motors
+            - symbol: SOFI
+              name: SOFI
+            - symbol: OPEN
+              name: Opendoor
+            - symbol: MRVL
+              name: Marvell
+            - symbol: PLTR
+              name: Palantir
