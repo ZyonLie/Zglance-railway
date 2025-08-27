@@ -25,46 +25,46 @@
           markets:
           - symbol: BTC-USD
             name: Bitcoin
-            chart-link-template: https://www.tradingview.com/chart/?symbol=btc-usd
+            chart-link: https://www.tradingview.com/chart/?symbol=btc-usd
           - symbol: SPY
             name: S&P 500
-            chart-link-template: https://www.tradingview.com/chart/?symbol=spy
+            chart-link: https://www.tradingview.com/chart/?symbol=spy
           - symbol: NVDA
             name: NVIDIA
-            chart-link-template: https://www.tradingview.com/chart/?symbol=nvda
+            chart-link: https://www.tradingview.com/chart/?symbol=nvda
           - symbol: AMD
             name: AMD
-            chart-link-template: https://www.tradingview.com/chart/?symbol=amd
+            chart-link: https://www.tradingview.com/chart/?symbol=amd
           - symbol: TSM
             name: TSMC
-            chart-link-template: https://www.tradingview.com/chart/?symbol=tsm
+            chart-link: https://www.tradingview.com/chart/?symbol=tsm
           - symbol: GOOG
             name: Google
-            chart-link-template: https://www.tradingview.com/chart/?symbol=goog
+            chart-link: https://www.tradingview.com/chart/?symbol=goog
           - symbol: SOFI
             name: SOFI
-            chart-link-template: https://www.tradingview.com/chart/?symbol=sofi
+            chart-link: https://www.tradingview.com/chart/?symbol=sofi
           - symbol: OPEN
             name: Opendoor
-            chart-link-template: https://www.tradingview.com/chart/?symbol=open
+            chart-link: https://www.tradingview.com/chart/?symbol=open
           - symbol: MRVL
             name: Marvell
-            chart-link-template: https://www.tradingview.com/chart/?symbol=mrvl
+            chart-link: https://www.tradingview.com/chart/?symbol=mrvl
           - symbol: PLTR
             name: Palantir
-            chart-link-template: https://www.tradingview.com/chart/?symbol=pltr
+            chart-link: https://www.tradingview.com/chart/?symbol=pltr
           - symbol: AVGO
             name: Broadcomm
-            chart-link-template: https://www.tradingview.com/chart/?symbol=avgo
+            chart-link: https://www.tradingview.com/chart/?symbol=avgo
           - symbol: ORCL
             name: Oracle
-            chart-link-template: https://www.tradingview.com/chart/?symbol=orcl
+            chart-link: https://www.tradingview.com/chart/?symbol=orcl
           - symbol: BABA
             name: Alibaba
-            chart-link-template: https://www.tradingview.com/chart/?symbol=baba
+            chart-link: https://www.tradingview.com/chart/?symbol=baba
           - symbol: INTC
             name: Intel
-            chart-link-template: https://www.tradingview.com/chart/?symbol=intc
+            chart-link: https://www.tradingview.com/chart/?symbol=intc
 
     - size: full
       widgets:
