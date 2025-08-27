@@ -37,10 +37,10 @@
               show-thumbnail: true
               limit: 20
 
-       - type: markets
-         hide-header: true
-         cache: 1m
-         markets:
+        - type: markets
+          hide-header: true
+          cache: 1m
+          markets:
           - symbol: BTC-USD
             name: Bitcoin
           - symbol: SPY
