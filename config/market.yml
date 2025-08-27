@@ -36,7 +36,9 @@
               title: Financial Times
               show-thumbnail: true
               limit: 20
-
+  columns:
+    - size: full
+      widgets:
         - type: markets
           hide-header: true
           cache: 1m
