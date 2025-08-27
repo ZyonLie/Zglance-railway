@@ -23,16 +23,7 @@
               </ul>
             </div>
 
-  columns:
-  - size: full
-    widgets:     
-        - type: rss
-          title: F1 News
-          style: detailed-list
-          cache: 30m
-          feeds:
-            - url: https://www.autosport.com/rss/f1/news/
-            
+  columns:            
   - size: small
     widgets:
         - type: custom-api
@@ -82,3 +73,12 @@
               </li>
               {{ end }}
             </ul>
+
+  - size: full
+    widgets:     
+        - type: rss
+          title: F1 News
+          style: detailed-list
+          cache: 30m
+          feeds:
+            - url: https://www.autosport.com/rss/f1/news/
