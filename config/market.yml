@@ -2,37 +2,37 @@
 - name: Market
   head-widgets:
       - type: markets
-          hide-header: true
-          cache: 1m
-          markets:
-            - symbol: BTC-USD
-              name: Bitcoin
-            - symbol: SPY
-              name: S&P 500
-            - symbol: NVDA
-              name: NVIDIA
-            - symbol: AMD
-              name: AMD
-            - symbol: TSM
-              name: TSMC
-            - symbol: GOOG
-              name: Google
-            - symbol: SOFI
-              name: SOFI
-            - symbol: OPEN
-              name: Opendoor
-            - symbol: MRVL
-              name: Marvell
-            - symbol: PLTR
-              name: Palantir
-            - symbol: AVGO
-              name: Broadcomm
-            - symbol: ORCL
-              name: Oracle
-            - symbol: BABA
-              name: Alibaba
-            - symbol: INTC
-              name: Intel
+        hide-header: true
+        cache: 1m
+        markets:
+          - symbol: BTC-USD
+            name: Bitcoin
+          - symbol: SPY
+            name: S&P 500
+          - symbol: NVDA
+            name: NVIDIA
+          - symbol: AMD
+            name: AMD
+          - symbol: TSM
+            name: TSMC
+          - symbol: GOOG
+            name: Google
+          - symbol: SOFI
+            name: SOFI
+          - symbol: OPEN
+            name: Opendoor
+          - symbol: MRVL
+            name: Marvell
+          - symbol: PLTR
+            name: Palantir
+          - symbol: AVGO
+            name: Broadcomm
+          - symbol: ORCL
+            name: Oracle
+          - symbol: BABA
+            name: Alibaba
+          - symbol: INTC
+            name: Intel
             
   columns:
     - size: full
@@ -58,9 +58,9 @@
     - size: small
       widgets:
        - type: markets
-        hide-header: true
-        cache: 1m
-        markets:
+         hide-header: true
+         cache: 1m
+         markets:
           - symbol: ^JKSE
             name: IHSG
           - symbol: IDR=X
