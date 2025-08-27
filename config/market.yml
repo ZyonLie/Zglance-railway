@@ -52,8 +52,8 @@
           - symbol: INTC
             name: Intel
 
-   - size: full
-     widgets:
+    - size: full
+      widgets:
        - type: rss
          title: News
          style: detailed-list
