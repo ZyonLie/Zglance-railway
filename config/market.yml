@@ -22,6 +22,7 @@
         - type: markets
           hide-header: true
           cache: 1m
+          sort-by: change
           markets:
           - symbol: BTC-USD
             name: Bitcoin
