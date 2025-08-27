@@ -1,6 +1,8 @@
 
 - name: Market
-  head-widgets:
+  columns:
+  - size: full
+    widgets:
       - type: markets
         hide-header: true
         cache: 1m
@@ -33,10 +35,7 @@
             name: Alibaba
           - symbol: INTC
             name: Intel
-            
-  columns:
-    - size: full
-      widgets:
+          
         - type: rss
           title: News
           style: detailed-list
@@ -55,6 +54,7 @@
               show-thumbnail: true
               limit: 20
 
+  head-widgets:
     - size: small
       widgets:
        - type: markets
