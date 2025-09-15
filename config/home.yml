@@ -148,3 +148,16 @@
               name: AMD
             - symbol: TSM
               name: TSMC
+
+       - type: monitor
+         cache: 1m
+         title: Services
+         style: compact
+         allow-insecure: true
+         sites:
+           - title: Affine Notes
+             url: https://notes.makuhub.com
+           - title: File Browser
+             url: https://files.makuhub.com
+           - title: Immich
+             url: https://photos.makuhub.com
