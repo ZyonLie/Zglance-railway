@@ -152,10 +152,10 @@
         - type: custom-api
           title: Uptime Kumas
           title-url: $kuma.makuhub.com
-          url: $kuma.makuhub.com/api/status-page/$makuhub
+          url: $kuma.makuhub.com/api/status-page/makuhub
           subrequests:
             heartbeats:
-              url: $kuma.makuhub.com/api/status-page/heartbeat/$makuhub
+              url: $kuma.makuhub.com/api/status-page/heartbeat/makuhub
           cache: 10m
           template: |
             {{ $hb := .Subrequest "heartbeats" }}
