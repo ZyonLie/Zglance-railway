@@ -152,6 +152,7 @@
         - type: monitor
           cache: 1m
           title: Services
+          style: compact
           sites:
             - title: Affine
               url: https://notes.makuhub.com
