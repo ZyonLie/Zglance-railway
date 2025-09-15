@@ -148,9 +148,10 @@
               name: AMD
             - symbol: TSM
               name: TSMC
+              
        - type: monitor
          cache: 1m
-         title: Services
+         title: Services Uptime
          sites:
            - title: Notes
              url: https://notes.makuhub.com
