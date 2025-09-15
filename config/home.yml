@@ -172,7 +172,7 @@
             {{ $id := .String "id" }}
             {{ $hbArray := $hb.JSON.Array (print "heartbeatList." $id) }}
             <div class="flex items-center gap-12">
-              <a class="size-title-dynamic color-highlight text-truncate block grow" href="${UPTIME_KUMA_URL}/dashboard/{{ $id }}"
+              <a class="size-title-dynamic color-highlight text-truncate block grow" href="$kuma.makuhub.com/dashboard/{{ $id }}"
                 target="_blank" rel="noreferrer">
                 {{ .String "name" }} </a>
     
