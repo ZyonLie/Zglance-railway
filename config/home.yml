@@ -11,12 +11,12 @@
             name: IHSG
           - symbol: IDR=X
             name: IDR/USD
-          - symbol: JPYIDR=X
-            name: JPY/IDR  
           - symbol: SGDIDR=X
             name: SGD/IDR
           - symbol: GC=F
             name: GOLD^JKSE
+          - symbol: CL=F
+            name: OIL  
 
   columns:
     - size: small
