@@ -135,7 +135,7 @@
               
     - size: small
       widgets:
-      $include: mal-list.yml
+        - $include: mal-list.yml
         - type: clock
           hide-header: true
           hour-format: 24h
