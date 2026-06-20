@@ -9,7 +9,7 @@ body {
   background-image: url("/assets/Draft Plan(1).png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   position: relative; 
 }
