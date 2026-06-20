@@ -6,6 +6,10 @@
   src: url(./DMSans-Regular.ttf) format('ttf');
 }
 body {
-  background: url("/assets/Draft Plan(1).png") no-repeat center center fixed;
+  background-image: url("/assets/Draft Plan(1).png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  position: relative; 
 }
