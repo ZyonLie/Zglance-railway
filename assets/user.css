@@ -5,3 +5,7 @@
   font-display: swap;
   src: url(./DMSans-Regular.ttf) format('ttf');
 }
+body {
+  background: url("/assets/Draft Plan(1).png") no-repeat center center fixed;
+  background-size: cover;
+}
