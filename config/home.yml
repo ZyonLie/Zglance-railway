@@ -90,6 +90,20 @@
           # Optionally hide the location from being displayed in the widget
           # hide-location: true
 
+        - type: search
+          search-engine: https://www.google.com/search?q={QUERY}&udm=14
+          bangs:
+            - title: Tokopedia
+              shortcut: "!tp"
+              url: https://www.tokopedia.com/search?st=&q={QUERY}
+            - title: YouTube
+              shortcut: "!yt"
+              url: https://www.youtube.com/results?search_query={QUERY}
+            - title: SteamDB
+              shortcut: "!sdb"
+              url: https://steamdb.info/search/?a=all&q={QUERY}
+          placeholder: "Ask and thou shall receive.."
+
         - type: group
           define: &shared-property
               type: rss
@@ -134,29 +148,3 @@
             - timezone: Asia/Tokyo
               label: JST
 
-        - type: markets
-          hide-header: true
-          cache: 1m
-          markets:
-            - symbol: SPY
-              name: S&P 500
-            - symbol: BTC-USD
-              name: Bitcoin
-            - symbol: NVDA
-              name: NVIDIA
-            - symbol: AMD
-              name: AMD
-            - symbol: TSM
-              name: TSMC
-
-        - type: monitor
-          cache: 1m
-          title: Services
-          style: compact
-          sites:
-            - title: Affine
-              url: https://notes.makuhub.com
-            - title: File Browser
-              url: https://files.makuhub.com
-            - title: Immich
-              url: https://photos.makuhub.com
