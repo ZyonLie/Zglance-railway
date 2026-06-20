@@ -135,7 +135,6 @@
               
     - size: small
       widgets:
-        - $include: mal-list.yml
         - type: clock
           hide-header: true
           hour-format: 24h
@@ -148,4 +147,4 @@
               label: PST
             - timezone: Asia/Tokyo
               label: JST
-
+        - $include: mal-list.yml
