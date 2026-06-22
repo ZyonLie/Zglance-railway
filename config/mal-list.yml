@@ -1,6 +1,7 @@
 - type: custom-api
   title: Seasonal Anime
   cache: 1d
+  hide-header: true
   url: https://api.jikan.moe/v4/seasons/now
   options:
     max_items: 8
