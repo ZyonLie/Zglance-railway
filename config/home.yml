@@ -94,6 +94,7 @@
         - type: search
           search-engine: https://www.google.com/search?q={QUERY}&udm=14
           hide-header: true
+          new-tab: true
           bangs:
             - title: Tokopedia
               shortcut: "!tp"
