@@ -93,16 +93,4 @@
 
     - size: full
       widgets:
-        - type: group
-          define: &shared-properties
-              type: reddit
-              show-thumbnails: true
-              collapse-after: 10
-          cache: 1h
-          widgets:
-          - subreddit: gamingnews
-            <<: *shared-properties
-          - subreddit: games
-            <<: *shared-properties
-          - subreddit: pcgaming
-            <<: *shared-properties
+        - $include: mal-list.yml
