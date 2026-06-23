@@ -91,6 +91,6 @@
                 - url: https://news.google.com/rss/search?q=site%3Avideocardz.com&hl=en-ID&gl=ID&ceid=ID%3Aen
               <<: *shared-property
 
-    - size: full
+    - size: small
       widgets:
         - $include: mal-list.yml
