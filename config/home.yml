@@ -151,3 +151,4 @@
             - timezone: Asia/Tokyo
               label: JST
         - $include: immich.yml
+        - $include: beszel.yml
