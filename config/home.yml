@@ -151,3 +151,4 @@
             - timezone: Asia/Tokyo
               label: JST
         - $include: mal-list.yml
+        - $include: immich.yml
