@@ -11,7 +11,7 @@
       headers:
         x-api-key: wdNo4cvQjeYABDqneK50kNiNhZjWT1sVUV20aZc0U
   options:
-    show-cards: true
+    show-cards: false
     show-storage-bar: true
   template: |
     {{ $photos := .JSON.Int "photos" }}
@@ -29,7 +29,7 @@
     {{ else }}
       {{ $storageError = printf "%d %s" $storage.Response.StatusCode $storage.Response.Status }}
     {{ end }}
-    {{ $showCards := .Options.BoolOr "show-cards" false }}
+    {{ $showCards := .Options.BoolOr "show-cards" true }}
     {{ $showStorageBar := .Options.BoolOr "show-storage-bar" true }}
 
     {{ if $showCards }}
