@@ -1,6 +1,7 @@
 - type: custom-api
   title: Server Stats
   cache: 5m
+  hide-header: true
   options:
     base-url: https://scout.zyonlie.net
     api-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2xsZWN0aW9uSWQiOiJfcGJfdXNlcnNfYXV0aF8iLCJleHAiOjE3ODU0MDEyNTEsImlkIjoiNzd3ajBucjBndHN5eTBuIiwicmVmcmVzaGFibGUiOnRydWUsInR5cGUiOiJhdXRoIn0.6M821UHbsg74owrSTCyEp8wuoO-cqeLPXpFCCyqxMXo
