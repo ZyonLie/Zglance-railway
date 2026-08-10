@@ -9,14 +9,19 @@
         markets:
           - symbol: ^JKSE
             name: IHSG
+            chart-link-template: https://finance.yahoo.com/quote/%5EJKSE/
           - symbol: IDR=X
             name: IDR/USD
+            chart-link-template: https://finance.yahoo.com/quote/IDRX-USD/
           - symbol: SGDIDR=X
             name: SGD/IDR
+            chart-link-template: https://finance.yahoo.com/quote/SGDIDR=X/
           - symbol: GC=F
             name: GOLD^JKSE
+            chart-link-template: https://finance.yahoo.com/quote/GC=F/
           - symbol: CL=F
-            name: OIL  
+            name: OIL
+            chart-link-template: https://finance.yahoo.com/quote/CL%3DF/
 
   columns:
     - size: small
