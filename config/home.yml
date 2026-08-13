@@ -17,7 +17,7 @@
             name: SGD/IDR
             chart-link: https://finance.yahoo.com/quote/SGDIDR=X/
           - symbol: GC=F
-            name: GOLD^JKSE
+            name: GOLD
             chart-link: https://finance.yahoo.com/quote/GC=F/
           - symbol: CL=F
             name: OIL
