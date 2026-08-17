@@ -110,6 +110,9 @@
             - title: SteamDB
               shortcut: "!sdb"
               url: https://steamdb.info/search/?a=all&q={QUERY}
+            - title: Reddit
+              shortcut: "!r"
+              url: https://www.reddit.com/search/?q={QUERY}
           placeholder: "Ask and thou shall receive.."
 
         - type: group
