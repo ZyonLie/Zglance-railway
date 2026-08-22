@@ -11,8 +11,8 @@
             name: IHSG
             chart-link: https://finance.yahoo.com/quote/%5EJKSE/
           - symbol: IDR=X
-            name: IDR/USD
-            chart-link: https://finance.yahoo.com/quote/IDRX-USD/
+            name: USD/IDR
+            chart-link: https://finance.yahoo.com/quote/IDR=X/
           - symbol: SGDIDR=X
             name: SGD/IDR
             chart-link: https://finance.yahoo.com/quote/SGDIDR=X/
