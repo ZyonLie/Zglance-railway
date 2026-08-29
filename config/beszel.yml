@@ -4,7 +4,7 @@
   hide-header: true
   options:
     base-url: https://scout.zyonlie.net
-    api-key: yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2xsZWN0aW9uSWQiOiJfcGJfdXNlcnNfYXV0aF8iLCJleHAiOjE3ODg1OTMzMzQsImlkIjoiNzd3ajBucjBndHN5eTBuIiwicmVmcmVzaGFibGUiOnRydWUsInR5cGUiOiJhdXRoIn0.rBFSdzkQMihznIaXhterhMKR_qVRv1s9J5Tc8a59SNs
+    api-key: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjb2xsZWN0aW9uSWQiOiJfcGJfdXNlcnNfYXV0aF8iLCJleHAiOjE3ODg1OTMzMzQsImlkIjoiNzd3ajBucjBndHN5eTBuIiwicmVmcmVzaGFibGUiOnRydWUsInR5cGUiOiJhdXRoIn0.rBFSdzkQMihznIaXhterhMKR_qVRv1s9J5Tc8a59SNs
   template: |
     {{/* Required config options */}}
     {{ $baseURL := .Options.StringOr "base-url" "" }}
