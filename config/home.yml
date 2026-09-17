@@ -97,10 +97,13 @@
           # hide-location: true
 
         - type: search
-          search-engine: https://www.google.com/search?q={QUERY}&udm=14
+          search-engine: https://search.shrew-economy.ts.net/search?q={QUERY}
           hide-header: true
           new-tab: true
           bangs:
+            - title: Google
+              shortcut: "!g"
+              url: https://www.google.com/search?q={QUERY}&udm=14
             - title: Tokopedia
               shortcut: "!tp"
               url: https://www.tokopedia.com/search?st=&q={QUERY}
