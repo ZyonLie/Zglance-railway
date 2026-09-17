@@ -57,7 +57,7 @@
           template: |
             <div class="flex flex-column gap-5">
               <p class="size-h5">{{ .JSON.String "races.raceName" }}</p>
-              <ul class="list collapsible-container" data-collapse-after="5">
+              <ul class="list collapsible-container" data-collapse-after="10">
                 {{ range $i, $v := .JSON.Array "races.results" }}
                 <li class="flex items-center {{ if eq $i 0 }}color-primary{{ else if eq $i 1 }}color-highlight{{ end }}">
                   <span class="grow min-width-0">{{ .String "position" }}. {{ .String "driver.shortName" }}</span>
