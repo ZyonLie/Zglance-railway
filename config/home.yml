@@ -103,7 +103,7 @@
         - type: group
           define: &shared-property
               type: rss
-              collapse-after: 8
+              collapse-after: 5
               style: detailed-list
           cache: 30m
           widgets:
