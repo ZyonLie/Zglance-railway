@@ -67,24 +67,6 @@
               </ul>
             </div>
 
-        - type: custom-api
-          title: Steam Specials
-          cache: 3h
-          url: https://store.steampowered.com/api/featuredcategories?cc=id
-          template: |
-            <ul class="list list-gap-10 collapsible-container" data-collapse-after="5">
-            {{ range .JSON.Array "specials.items" }}
-            <li>
-              <a class="size-h4 color-highlight block text-truncate" href="https://store.steampowered.com/app/{{ .Int "id" }}/">{{ .String "name" }}</a>
-              <ul class="list-horizontal-text">
-                <li>{{ div (.Int "final_price" | toFloat) 100 | printf "Rp%.2f" }}</li>
-                {{ $discount := .Int "discount_percent" }}
-              <li{{ if ge $discount 40 }} class="color-positive"{{ end }}>{{ $discount }}% off</li>
-              </ul>
-            </li>
-            {{ end }}
-            </ul>
-
     - size: full
       widgets:
         - type: weather
@@ -161,5 +143,23 @@
               label: PST
             - timezone: Asia/Tokyo
               label: JST
-        - $include: beszel.yml
-        - $include: immich.yml
+        
+        - type: custom-api
+          title: Steam Specials
+          cache: 3h
+          url: https://store.steampowered.com/api/featuredcategories?cc=id
+          template: |
+            <ul class="list list-gap-10 collapsible-container" data-collapse-after="5">
+            {{ range .JSON.Array "specials.items" }}
+            <li>
+              <a class="size-h4 color-highlight block text-truncate" href="https://store.steampowered.com/app/{{ .Int "id" }}/">{{ .String "name" }}</a>
+              <ul class="list-horizontal-text">
+                <li>{{ div (.Int "final_price" | toFloat) 100 | printf "Rp%.2f" }}</li>
+                {{ $discount := .Int "discount_percent" }}
+              <li{{ if ge $discount 40 }} class="color-positive"{{ end }}>{{ $discount }}% off</li>
+              </ul>
+            </li>
+            {{ end }}
+            </ul>
+        #- $include: beszel.yml
+        #- $include: immich.yml
