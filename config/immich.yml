@@ -2,7 +2,7 @@
   title: Immich Stats
   hide-header: true
   cache: 10m
-  url: https://photos.zyonlie.net/api/server/statistics
+  url: https://photos.shrew-economy.ts.net/api/server/statistics
   headers:
     x-api-key: wdNo4cvQjeYABDqneK50kNiNhZjWT1sVUV20aZc0U
   subrequests:
