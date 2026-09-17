@@ -2,12 +2,12 @@
   title: Immich Stats
   hide-header: true
   cache: 10m
-  url: http://100.111.242.57:30051/api/server/statistics
+  url: http://100.111.242.57:30041/api/server/statistics
   headers:
     x-api-key: wdNo4cvQjeYABDqneK50kNiNhZjWT1sVUV20aZc0U
   subrequests:
     storage:
-      url: http://100.111.242.57:30051/api/server/storage
+      url: http://100.111.242.57:30041/api/server/storage
       headers:
         x-api-key: wdNo4cvQjeYABDqneK50kNiNhZjWT1sVUV20aZc0U
   options:
