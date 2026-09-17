@@ -7,7 +7,7 @@
     x-api-key: wdNo4cvQjeYABDqneK50kNiNhZjWT1sVUV20aZc0U
   subrequests:
     storage:
-      url: https://photos.zyonlie.net/api/server/storage
+      url: https://photos.shrew-economy.ts.net/api/server/storage
       headers:
         x-api-key: wdNo4cvQjeYABDqneK50kNiNhZjWT1sVUV20aZc0U
   options:
