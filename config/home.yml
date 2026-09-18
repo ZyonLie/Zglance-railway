@@ -168,7 +168,6 @@
          service: technitium
          hide-header: true
          url: https://dns.shrew-economy.ts.net/
-         allow-insecure: true
          token: ad747d818e81a498dfd487c2bd606decdbf39edbb396c5616c156bd15dd5b0e9
          hide-graph: true
          hide-top-domains: true
