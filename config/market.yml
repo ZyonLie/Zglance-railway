@@ -17,7 +17,7 @@
             name: GOLD^JKSE
             
   columns:
-    - size: full
+    - size: small
       widgets:
         - type: markets
           hide-header: true
@@ -42,27 +42,6 @@
           - symbol: GOOG
             name: Google
             chart-link: https://www.tradingview.com/chart/?symbol=goog
-          - symbol: SOFI
-            name: SOFI
-            chart-link: https://www.tradingview.com/chart/?symbol=sofi
-          - symbol: OPEN
-            name: Opendoor
-            chart-link: https://www.tradingview.com/chart/?symbol=open
-          - symbol: MRVL
-            name: Marvell
-            chart-link: https://www.tradingview.com/chart/?symbol=mrvl
-          - symbol: PLTR
-            name: Palantir
-            chart-link: https://www.tradingview.com/chart/?symbol=pltr
-          - symbol: AVGO
-            name: Broadcomm
-            chart-link: https://www.tradingview.com/chart/?symbol=avgo
-          - symbol: ORCL
-            name: Oracle
-            chart-link: https://www.tradingview.com/chart/?symbol=orcl
-          - symbol: BABA
-            name: Alibaba
-            chart-link: https://www.tradingview.com/chart/?symbol=baba
           - symbol: INTC
             name: Intel
             chart-link: https://www.tradingview.com/chart/?symbol=intc
@@ -77,6 +56,7 @@
          feeds:
             - url: https://feeds.bloomberg.com/markets/news.rss
               title: Bloomberg
+              show-thumbnail: true
               limit: 20
             - url: https://www.ft.com/companies?format=rss
               title: Financial Times
