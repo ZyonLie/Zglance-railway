@@ -57,7 +57,7 @@
           template: |
             <div class="flex flex-column gap-5">
               <p class="size-h5">{{ .JSON.String "races.raceName" }}</p>
-              <ul class="list collapsible-container" data-collapse-after="10">
+              <ul class="list collapsible-container" data-collapse-after="5">
                 {{ range $i, $v := .JSON.Array "races.results" }}
                 <li class="flex items-center {{ if eq $i 0 }}color-primary{{ else if eq $i 1 }}color-highlight{{ end }}">
                   <span class="grow min-width-0">{{ .String "position" }}. {{ .String "driver.shortName" }}</span>
@@ -66,7 +66,25 @@
                 {{ end }}
               </ul>
             </div>
-
+       
+        - type: custom-api
+          title: Steam Specials
+          cache: 3h
+          url: https://store.steampowered.com/api/featuredcategories?cc=id
+          template: |
+            <ul class="list list-gap-10 collapsible-container" data-collapse-after="5">
+            {{ range .JSON.Array "specials.items" }}
+            <li>
+              <a class="size-h4 color-highlight block text-truncate" href="https://store.steampowered.com/app/{{ .Int "id" }}/">{{ .String "name" }}</a>
+              <ul class="list-horizontal-text">
+                <li>{{ div (.Int "final_price" | toFloat) 100 | printf "Rp%.2f" }}</li>
+                {{ $discount := .Int "discount_percent" }}
+              <li{{ if ge $discount 40 }} class="color-positive"{{ end }}>{{ $discount }}% off</li>
+              </ul>
+            </li>
+            {{ end }}
+            </ul>
+            
     - size: full
       widgets:
         - type: weather
@@ -145,23 +163,16 @@
               label: PST
             - timezone: Asia/Tokyo
               label: JST
-        
-        - type: custom-api
-          title: Steam Specials
-          cache: 3h
-          url: https://store.steampowered.com/api/featuredcategories?cc=id
-          template: |
-            <ul class="list list-gap-10 collapsible-container" data-collapse-after="5">
-            {{ range .JSON.Array "specials.items" }}
-            <li>
-              <a class="size-h4 color-highlight block text-truncate" href="https://store.steampowered.com/app/{{ .Int "id" }}/">{{ .String "name" }}</a>
-              <ul class="list-horizontal-text">
-                <li>{{ div (.Int "final_price" | toFloat) 100 | printf "Rp%.2f" }}</li>
-                {{ $discount := .Int "discount_percent" }}
-              <li{{ if ge $discount 40 }} class="color-positive"{{ end }}>{{ $discount }}% off</li>
-              </ul>
-            </li>
-            {{ end }}
-            </ul>
+              
+       - type: dns-stats
+         service: technitium
+         hide-header: true
+         url: https://dns.shrew-economy.ts.net/
+         allow-insecure: true
+         token: ad747d818e81a498dfd487c2bd606decdbf39edbb396c5616c156bd15dd5b0e9
+         hide-graph: true
+         hide-top-domains: true
+         hour-format: 24h
+
         #- $include: beszel.yml
         #- $include: immich.yml
