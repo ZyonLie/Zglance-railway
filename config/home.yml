@@ -110,6 +110,8 @@
             - title: Market
               feeds:
                 - url: https://feeds.bloomberg.com/markets/news.rss
+                  title: Bloomberg
+                  show-thumbnail: true
                 - url: https://www.ft.com/companies?format=rss
                   title: Financial Times
                   show-thumbnail: true
