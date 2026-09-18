@@ -3,25 +3,27 @@
   # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
   # hide-desktop-navigation: true
   head-widgets:
-      - type: markets
+      - type: search
+        search-engine: https://search.shrew-economy.ts.net/search?q={QUERY}
         hide-header: true
-        cache: 1m
-        markets:
-          - symbol: ^JKSE
-            name: IHSG
-            chart-link: https://finance.yahoo.com/quote/%5EJKSE/
-          - symbol: IDR=X
-            name: USD/IDR
-            chart-link: https://finance.yahoo.com/quote/IDR=X/
-          - symbol: SGDIDR=X
-            name: SGD/IDR
-            chart-link: https://finance.yahoo.com/quote/SGDIDR=X/
-          - symbol: GC=F
-            name: GOLD
-            chart-link: https://finance.yahoo.com/quote/GC=F/
-          - symbol: CL=F
-            name: OIL
-            chart-link: https://finance.yahoo.com/quote/CL%3DF/
+        new-tab: true
+        bangs:
+           - title: Google
+             shortcut: "!g"
+             url: https://www.google.com/search?q={QUERY}&udm=14
+           - title: Tokopedia
+             shortcut: "!tp"
+             url: https://www.tokopedia.com/search?st=&q={QUERY}
+           - title: YouTube
+             shortcut: "!yt"
+             url: https://www.youtube.com/results?search_query={QUERY}
+           - title: SteamDB
+             shortcut: "!sdb"
+             url: https://steamdb.info/search/?a=all&q={QUERY}
+           - title: Reddit
+             shortcut: "!r"
+             url: https://www.reddit.com/search/?q={QUERY}
+         placeholder: "Ask and thou shall receive.."
 
   columns:
     - size: small
@@ -95,74 +97,7 @@
           hour-format: 24h # alternatively "24h"
           # Optionally hide the location from being displayed in the widget
           # hide-location: true
-
-        - type: search
-          search-engine: https://search.shrew-economy.ts.net/search?q={QUERY}
-          hide-header: true
-          new-tab: true
-          bangs:
-            - title: Google
-              shortcut: "!g"
-              url: https://www.google.com/search?q={QUERY}&udm=14
-            - title: Tokopedia
-              shortcut: "!tp"
-              url: https://www.tokopedia.com/search?st=&q={QUERY}
-            - title: YouTube
-              shortcut: "!yt"
-              url: https://www.youtube.com/results?search_query={QUERY}
-            - title: SteamDB
-              shortcut: "!sdb"
-              url: https://steamdb.info/search/?a=all&q={QUERY}
-            - title: Reddit
-              shortcut: "!r"
-              url: https://www.reddit.com/search/?q={QUERY}
-          placeholder: "Ask and thou shall receive.."
-
-        - type: group
-          define: &shared-property
-              type: rss
-              collapse-after: 5
-              style: detailed-list
-          cache: 30m
-          widgets:
-            - title: Market
-              feeds:
-                - url: https://feeds.bloomberg.com/markets/news.rss
-                  title: Bloomberg
-                  show-thumbnail: true
-                - url: https://www.ft.com/companies?format=rss
-                  title: Financial Times
-                  show-thumbnail: true
-                - url: https://www.ft.com/markets?format=rss
-                  title: Financial Times
-                  show-thumbnail: true
-              <<: *shared-property
-            - title: Tech
-              feeds:
-                - url: https://www.techpowerup.com/rss/news
-                - url: https://www.techpowerup.com/rss/reviews
-                - url: https://wccftech.com/topic/hardware/rss
-                - url: https://wccftech.com/topic/games/rss
-              <<: *shared-property
-            - title: F1
-              feeds:
-                - url: https://www.autosport.com/rss/f1/news/
-              <<: *shared-property
-              
-    - size: small
-      widgets:
-        - type: clock
-          hide-header: true
-          hour-format: 24h
-          timezones:
-            - timezone: Etc/UTC
-              label: UTC
-            - timezone: America/New_York
-              label: EST
-            - timezone: America/Los_Angeles
-              label: PST
-            - timezone: Asia/Tokyo
-              label: JST
+          
         - type: bookmarks
           groups:
             - links:
@@ -194,6 +129,41 @@
                   url: https://scout.zyonlie.net
                 - title: Docker Manager
                   url: https://100.111.242.57:31015
+                  
+    - size: small
+      widgets:
+        - type: clock
+          hide-header: true
+          hour-format: 24h
+          timezones:
+            - timezone: Etc/UTC
+              label: UTC
+            - timezone: America/New_York
+              label: EST
+            - timezone: America/Los_Angeles
+              label: PST
+            - timezone: Asia/Tokyo
+              label: JST
+              
+        - type: markets
+          hide-header: true
+          cache: 1m
+          markets:
+            - symbol: ^JKSE
+              name: IHSG
+              chart-link: https://finance.yahoo.com/quote/%5EJKSE/
+            - symbol: IDR=X
+              name: USD/IDR
+              chart-link: https://finance.yahoo.com/quote/IDR=X/
+            - symbol: SGDIDR=X
+              name: SGD/IDR
+              chart-link: https://finance.yahoo.com/quote/SGDIDR=X/
+            - symbol: GC=F
+              name: GOLD
+              chart-link: https://finance.yahoo.com/quote/GC=F/
+            - symbol: CL=F
+              name: OIL
+              chart-link: https://finance.yahoo.com/quote/CL%3DF/
 
         #- $include: beszel.yml
         #- $include: immich.yml
