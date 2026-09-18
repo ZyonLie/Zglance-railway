@@ -48,29 +48,31 @@
 
     - size: full
       widgets:
-       - type: rss
-         hide-header: true
-         title: News
-         style: detailed-list
-         collapse-after: 8
-         cache: 5m
-         feeds:
-            - url: https://www.ft.com/companies?format=rss
-              title: Financial Times
-              show-thumbnail: false
-              limti:  20
-            - url: https://www.ft.com/markets?format=rss
-              title: Financial Times
-              show-thumbnail: false
-              limit: 20
-       - type: rss
-         hide-header: true
-         title: News
-         style: detailed-list
-         collapse-after: 8
-         cache: 5m
-         feeds:
-            - url: https://feeds.bloomberg.com/markets/news.rss
-              title: Bloomberg
-              show-thumbnail: false
-              limit: 20              
+       - type: group
+         widgets:
+         - type: rss
+           hide-header: true
+           title: News
+           style: detailed-list
+           collapse-after: 8
+           cache: 5m
+           feeds:
+              - url: https://www.ft.com/companies?format=rss
+                title: Financial Times
+                show-thumbnail: false
+                limit:  20
+              - url: https://www.ft.com/markets?format=rss
+                title: Financial Times
+                show-thumbnail: false
+                limit: 20
+         - type: rss
+           hide-header: true
+           title: News
+           style: detailed-list
+           collapse-after: 8
+           cache: 5m
+           feeds:
+              - url: https://feeds.bloomberg.com/markets/news.rss
+                title: Bloomberg
+                show-thumbnail: false
+                limit: 20              
