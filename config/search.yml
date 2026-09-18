@@ -18,4 +18,4 @@
     - title: Reddit
       shortcut: "!r"
       url: https://www.reddit.com/search/?q={QUERY}
-   placeholder: "Ask and thou shall receive.."
+  placeholder: "Ask and thou shall receive.."
