@@ -163,37 +163,37 @@
               label: PST
             - timezone: Asia/Tokyo
               label: JST
-      - type: bookmarks
-        groups:
-          - links:
-              - title: Search
-                url: https://search.shrew-economy.ts.net
-              - title: Photos
-                url: https://photos.shrew-economy.ts.net
-              - title: Music
-                url: https://music.shrew-economy.ts.net
-              - title: Notes
-                url: https://notes.shrew-economy.ts.net
-          - title: Tools
-            links:
-              - title: File Explorer
-                url: https://files.shrew-economy.ts.net
-              - title: PDF Editor
-                url: https://pdf.shrew-economy.ts.net
-              - title: Password Manager
-                url: https://vault.shrew-economy.ts.net
-              - title: Health Dashboard
-                url: https://fit.shrew-economy.ts.net
-          - title: Admin
-            links:
-              - title: Terminal
-                url: https://ssh.shrew-economy.ts.net
-              - title: DNS
-                url: https://dns.shrew-economy.ts.net
-              - title: Monitoring
-                url: https://scout.zyonlie.net
-              - title: Docker Manager
-                url: https://100.111.242.57:31015
+        - type: bookmarks
+          groups:
+            - links:
+                - title: Search
+                  url: https://search.shrew-economy.ts.net
+                - title: Photos
+                  url: https://photos.shrew-economy.ts.net
+                - title: Music
+                  url: https://music.shrew-economy.ts.net
+                - title: Notes
+                  url: https://notes.shrew-economy.ts.net
+            - title: Tools
+              links:
+                - title: File Explorer
+                  url: https://files.shrew-economy.ts.net
+                - title: PDF Editor
+                  url: https://pdf.shrew-economy.ts.net
+                - title: Password Manager
+                  url: https://vault.shrew-economy.ts.net
+                - title: Health Dashboard
+                  url: https://fit.shrew-economy.ts.net
+            - title: Admin
+              links:
+                - title: Terminal
+                  url: https://ssh.shrew-economy.ts.net
+                - title: DNS
+                  url: https://dns.shrew-economy.ts.net
+                - title: Monitoring
+                  url: https://scout.zyonlie.net
+                - title: Docker Manager
+                  url: https://100.111.242.57:31015
 
         #- $include: beszel.yml
         #- $include: immich.yml
