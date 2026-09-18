@@ -52,7 +52,7 @@
          widgets:
          - type: rss
            hide-header: true
-           title: News
+           title: Financial Times
            style: detailed-list
            collapse-after: 8
            cache: 5m
@@ -67,7 +67,7 @@
                 limit: 20
          - type: rss
            hide-header: true
-           title: News
+           title: Bloomberg
            style: detailed-list
            collapse-after: 8
            cache: 5m
