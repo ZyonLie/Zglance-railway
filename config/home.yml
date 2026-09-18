@@ -3,27 +3,27 @@
   # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
   # hide-desktop-navigation: true
   head-widgets:
-      - type: search
-        search-engine: https://search.shrew-economy.ts.net/search?q={QUERY}
-        hide-header: true
-        new-tab: true
-        bangs:
-           - title: Google
-             shortcut: "!g"
-             url: https://www.google.com/search?q={QUERY}&udm=14
-           - title: Tokopedia
-             shortcut: "!tp"
-             url: https://www.tokopedia.com/search?st=&q={QUERY}
-           - title: YouTube
-             shortcut: "!yt"
-             url: https://www.youtube.com/results?search_query={QUERY}
-           - title: SteamDB
-             shortcut: "!sdb"
-             url: https://steamdb.info/search/?a=all&q={QUERY}
-           - title: Reddit
-             shortcut: "!r"
-             url: https://www.reddit.com/search/?q={QUERY}
-         placeholder: "Ask and thou shall receive.."
+    - type: search
+      search-engine: https://search.shrew-economy.ts.net/search?q={QUERY}
+      hide-header: true
+      new-tab: true
+      bangs:
+        - title: Google
+          shortcut: "!g"
+          url: https://www.google.com/search?q={QUERY}&udm=14
+        - title: Tokopedia
+          shortcut: "!tp"
+          url: https://www.tokopedia.com/search?st=&q={QUERY}
+        - title: YouTube
+          shortcut: "!yt"
+          url: https://www.youtube.com/results?search_query={QUERY}
+        - title: SteamDB
+          shortcut: "!sdb"
+          url: https://steamdb.info/search/?a=all&q={QUERY}
+        - title: Reddit
+          shortcut: "!r"
+          url: https://www.reddit.com/search/?q={QUERY}
+      placeholder: "Ask and thou shall receive.."
 
   columns:
     - size: small
